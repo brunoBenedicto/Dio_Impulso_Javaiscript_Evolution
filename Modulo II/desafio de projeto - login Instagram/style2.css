@@ -1,0 +1,14 @@
+.input{
+    height: 36px;
+    width: 260px;
+    padding: 9px 0 7px 8px;
+    margin-bottom: 5px;
+}
+.container-linha{
+    display: flex;
+    flex-direction: row;
+}
+.linha{
+    width: 100;
+    border-bottom: 1px solid ;
+}
