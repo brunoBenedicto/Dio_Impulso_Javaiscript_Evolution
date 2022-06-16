@@ -4,11 +4,44 @@
     padding: 9px 0 7px 8px;
     margin-bottom: 5px;
 }
+
 .container-linha{
     display: flex;
+    width: 260px;
     flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 .linha{
-    width: 100;
-    border-bottom: 1px solid ;
+    width: 100px;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    text-decoration: line-through;
+}
+
+.container-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+.container-cadastro p{
+    margin-left: 5px;
+}
+
+.cadastre-se{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+#btn-login{
+    margin-top: 10px;
+}
+#btn-login:disabled{
+    opacity: 0.4;
 }

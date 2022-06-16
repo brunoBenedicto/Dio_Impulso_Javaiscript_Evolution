@@ -5,37 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="style-slide.css">
+    <link rel="icon" type="image/png" href="./img/icon-instagram.png" />
     <title>Instagram</title>
 </head>
 <body>
     <div class="instagram-wrapper">
-        <div class="instagram-phone">
-            <img src="./img/celular-capa.png" alt="celular">
-        </div>
 
+        <div class="instagram-phone">
+            <img class="selecionada" src="./img/celular-img01.png" alt="celular">
+            <img src="./img/celular-img02.png" alt="celular">
+            <img src="./img/celular-img03.png" alt="celular">
+            <img src="./img/celular-img04.png" alt="celular">
+            <img src="./img/celular-img05.png" alt="celular">
+        </div>
         <div class="instagram-continue">
             <div class="group">
                 <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
                
-                <input class ="input" type="text" placeholder="Telefone, nome de usuário ou email">
-                <input class="input" type="password" placeholder="Senha">
-                <a href="#" class="instagram-login input">Entrar</a>
+                <input id="usuario" onchange="toggleBtn()" class ="input" type="text" placeholder="Telefone, nome de usuário ou email">
+                <input id="senha" onchange="toggleBtn()" class="input" type="password" placeholder="Senha">
+                
+                <a href="paginaInicial.html">
+                <button id = "btn-login" disabled class="instagram-login input">Entrar</button>
+                </a>
+                
                 <div class= "container-linha">
                     <div class="linha"></div>
-                    <div>OU</div>
+                    <div class=>OU</div>
                     <div class="linha"></div>
                 </div>
-                <a href="#" class="instagram-logout">
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%2522kg99w21kt3ci0q88m7l1syu0y31519n681ds0fqy138rnzg1ge3gir%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dpt_BR%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D0b1d7543-5e0e-4882-8dda-e07b570ef218%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522kg99w21kt3ci0q88m7l1syu0y31519n681ds0fqy138rnzg1ge3gir%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=pt_BR&pl_dbl=0" class="instagram-logout">
                     <img src="./img/facebook-icon.png">
                     Entrar com o Facebook</a>
             </div>
-            <div class="group">
-                <p class="not-account">Não é sprucegabriela?</p>
+            <br>
+            <div class="container-cadastro">
+                <p class="not-account">Não tem uma conta?</p>
                 <p class="not-account">
-                    <span class="link-blue">Alternar contas</span>
-                    ou
-                    <span class="link-blue">Inscreva-se</span>
+                    <a href="https://www.instagram.com/accounts/emailsignup/">
+                    <span class="link-blue cadastre-se">Cadastre-se</span>
+                    </a>
                 </p>
             </div>
             <div class="get-the-app">
@@ -47,5 +56,8 @@
             </div>
         </div>
     </div>
+
+    <script src="habilita-btn-script.js"></script>
+    <script src="phone-script.js"></script>
 </body>
 </html> 
