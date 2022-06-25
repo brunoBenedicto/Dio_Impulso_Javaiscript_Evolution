@@ -8,23 +8,23 @@ let campoSaldo = document.getElementById('campo-saldo') as HTMLSpanElement;
 //campoSaldo.innerHTML = 0
 
 function somarAoSaldo(soma:string) {
-    if(soma.length < 1){
-        console.log("campo soma vazio")
-        if(campoSaldo.innerHTML ===''){
-            console.log("saldo tabem vazio")
-            campoSaldo.innerHTML = '0'
+        if(soma.length < 1){
+            console.log("campo soma vazio")
+            if(campoSaldo.innerHTML ===''){
+                console.log("saldo tambem vazio")
+                campoSaldo.innerHTML = '0'
+            }
         }
-    }
-    else{
-        if(campoSaldo.innerHTML ===''){
-            console.log("saldo estava vazio")
-            campoSaldo.innerHTML = parseInt(soma).toString()
-        } 
         else{
-            console.log("somando")
-            campoSaldo.innerHTML = (parseInt(campoSaldo.innerHTML) +  parseInt(soma)).toString();
+            if(campoSaldo.innerHTML ===''){
+                console.log("saldo estava vazio")
+                campoSaldo.innerHTML = parseInt(soma).toString()
+            } 
+            else{
+                console.log("somando")
+                campoSaldo.innerHTML = (parseInt(campoSaldo.innerHTML) +  parseInt(soma)).toString();
+            }
         }
-    }
 }
 
 function limparSaldo() {

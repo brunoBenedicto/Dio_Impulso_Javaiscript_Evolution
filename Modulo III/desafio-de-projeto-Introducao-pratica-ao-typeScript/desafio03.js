@@ -9,7 +9,7 @@ function somarAoSaldo(soma) {
     if (soma.length < 1) {
         console.log("campo soma vazio");
         if (campoSaldo.innerHTML === '') {
-            console.log("saldo tabem vazio");
+            console.log("saldo tambem vazio");
             campoSaldo.innerHTML = '0';
         }
     }
