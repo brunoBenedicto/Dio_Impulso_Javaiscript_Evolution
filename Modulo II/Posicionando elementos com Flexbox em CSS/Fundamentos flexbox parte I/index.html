@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FlexBox</title>
+</head>
+<body>
+    <header> 
+        <h1>FlexBox</h1>
+    </header>
+    <div class="container">
+        <div id="lista">
+            <div>
+                <h3>flex-direction</h3>
+                <p>Estabelece o eixo principal do container</p>
+                <input type="radio" id="row" name="flex-direction" value="fd-row" onchange="FlexDirection(this)">
+                <label for="row">row (default)</label>
+                <input type="radio" id="row-reverse" name="flex-direction" value="fd-row-reverse" onchange ="FlexDirection(this)">
+                <label for="row-reverse">row-reverse </label>
+                <input type="radio" id="column" name="flex-direction" value="fd-column" onchange="FlexDirection(this)">
+                <label for="column">column </label>
+                <input type="radio" id="column-reverse" name="flex-direction" value="fd-column-reverse" onchange="FlexDirection(this)">
+                <label for="column-reverse">column-reverse</label>
+            </div>
+            <div>
+                <h3>flex-wrap</h3>
+                <p> propriedade que define se os itens devem ou não quebrar a linha</p>
+                <input type = "radio" id="nowrap" name="flex-wrap" value="fw-nowrap" onchange="FlexWrap(this)">
+                <label for="nowrap">nowrap (default)</label>
+                <input type = "radio" id="wrap" name="flex-wrap" value="fw-wrap" onchange="FlexWrap(this)">
+                <label for="wrap">wrap</label>
+                <input type = "radio" id="wrap-reverse" name="flex-wrap" value="fw-wrap-reverse" onchange="FlexWrap(this)">
+                <label for="wrap-reverse">wrap-reverse</label>
+            </div>
+            <div>
+                <h3>flex-flow</h3>
+                <p>O flex flow combina as propriedades do flex-direction e do flex-flow</p>
+                
+            </div>
+            <div>
+                <h3>justfy-content</h3>
+                <p>Se encarrega de alinhar os itens dentro do container de acordo com a direção pretendida e tratar da distribuição de espaço entre eles.</p>
+                <input type = "radio" id="flex-start" name="justify-content" value="jc-flex-start" onchange="justifyContent(this)">
+                <label for="flex-start">flex-start (default)</label>
+                <input type = "radio" id="flex-end" name="justify-content" value="jc-flex-end" onchange="justifyContent(this)">
+                <label for="flex-end">flex-end</label>
+                <input type = "radio" id="center" name="justify-content" value="jc-center" onchange="justifyContent(this)">
+                <label for="center">center</label>
+                <input type = "radio" id="space-between" name="justify-content" value="jc-space-between" onchange="justifyContent(this)">
+                <label for="space-between">space-between</label>
+                <input type = "radio" id="space-around" name="justify-content" value="jc-space-around" onchange="justifyContent(this)">
+                <label for="space-around">space-around</label>
+            </div>
+            <div>
+                <h3>Align-content</h3>
+                <p>é a propriedade responsável por tratar o alinhamento em relação ao eixo vertical do container</p>
+                <input type = "radio" id="flex-start" name="Align-content" value="ac-flex-start" onchange="alignContent(this)">
+                <label for="flex-start">flex-start</label>
+                <input type = "radio" id="flex-end" name="Align-content" value="ac-flex-end" onchange="alignContent(this)">
+                <label for="flex-end">flex-end</label>
+                <input type = "radio" id="center" name="Align-content" value="ac-center" onchange="alignContent(this)">
+                <label for="center">center</label>
+                <input type = "radio" id="space-between" name="Align-content" value="ac-space-between" onchange="alignContent(this)">
+                <label for="space-between">space-between</label>
+                <input type = "radio" id="space-around" name="Align-content" value="ac-space-around" onchange="alignContent(this)">
+                <label for="space-around">space-around</label>
+            </div>
+            <div>
+                <h3>align-items</h3>
+                <p>Trata do alinnhamento dos flex items com o eixo do container. Permite o alinhamento central no eixo vertical.</p>
+                <input type = "radio" id="center" name="align-items" value="ai-center" onchange="alignItens(this)">
+                <label for="center">center</label>
+                <input type = "radio" id="strech" name="align-items" value="ai-strech" onchange="alignItens(this)">
+                <label for="strech">strech</label>
+                <input type = "radio" id="flex-start" name="align-items" value="ai-flex-start"onchange="alignItens(this)">
+                <label for="flex-start">flex-start</label>
+                <input type = "radio" id="flex-end" name="align-items" value="ai-flex-end" onchange="alignItens(this)">
+                <label for="flex-end">flex-end</label>
+                <input type = "radio" id="baseline" name="align-items" value="ai-baseline"onchange="alignItens(this)">
+                <label for="baseline">baseline</label>
+            </div>
+        </div>
+        <div id="painel">
+            <div class="item ">1<p>Um</p></div>
+            <div class="item ">2</div>
+            <div class="item ">3</div>
+            <div class="item ">4</div>
+            <div class="item ">5</div>
+            <div class="item ">6</div>
+            <div class="item ">7</div>
+            <div class="item ">8<p>Oito</p></div>
+            <div class="item ">9</div>
+            <div class="item ">10</div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
