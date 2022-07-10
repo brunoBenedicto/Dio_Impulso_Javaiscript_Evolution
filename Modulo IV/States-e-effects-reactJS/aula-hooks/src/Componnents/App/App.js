@@ -6,9 +6,7 @@ import IfoodCounter from '../ifoodCounter/IfoodCounter';
 function App() {
   return (
     <>
-      <h1>ae meu vei</h1>
-      <Counter/>
-      <SmartCounter/>
+      <h1>Hooks : useState | useEffect</h1>
       <IfoodCounter/>
     </>
   );

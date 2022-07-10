@@ -35,3 +35,21 @@
     color: rgb(105, 105, 105);
     cursor: pointer;
 }
+
+.btnAdd{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    color: white;
+    border: 3px solid red;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    width: 15%;
+    margin-left: 10px;
+}
+.containerIfood{
+    display: flex;
+    flex-direction: row;
+}
