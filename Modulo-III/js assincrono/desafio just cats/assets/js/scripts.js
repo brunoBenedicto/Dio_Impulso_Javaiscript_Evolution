@@ -22,3 +22,4 @@ const loadImg = async () => {
 catBtn.addEventListener('click', loadImg);
 
 loadImg();
+alert("api dos gatos não funcionou")
